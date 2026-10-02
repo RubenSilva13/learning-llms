@@ -5,3 +5,5 @@ langchain-text-splitters
 python-dotenv
 pypdf
 sentence-transformers
+langchain
+ddgs

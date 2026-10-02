@@ -9,6 +9,7 @@ Exercícios práticos de aprendizagem sobre Large Language Models, desde prompts
 | `01_explicador.py` | Prompt templates e chains | Explica um tema adaptado ao nível (iniciante/avançado) e ao idioma escolhidos |
 | `02_chatbot.py` | Memória | Chatbot que se lembra da conversa, com janela das últimas mensagens |
 | `03_rag.py` | RAG | Responde a perguntas sobre um PDF, indicando as páginas usadas como fonte |
+| `04_agente.py` | Agentes e ferramentas | Agente que decide quando usar ferramentas (hora atual, pesquisa web) e indica as fontes |
 
 ## Como funciona o RAG
 
@@ -37,7 +38,8 @@ Para o RAG, coloca um PDF na pasta com o nome `documento.pdf`.
 - A "memória" de um chatbot é apenas reenviar o histórico em cada pedido.
 - O RAG reduz alucinações ao obrigar o modelo a responder com base em documentos.
 - Tutoriais desatualizam depressa: modelos deixam de estar disponíveis e APIs mudam.
-
+- Um agente é um LLM que decide que ferramentas usar; a docstring de cada ferramenta é o que o guia.
+- Com pesquisa web, o agente responde com dados reais — mas a resposta só é tão boa quanto as fontes.
 ## Tecnologias
 
 Python · LangChain · Hugging Face · Sentence Transformers
