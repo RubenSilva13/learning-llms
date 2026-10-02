@@ -15,15 +15,15 @@ Exercícios práticos de aprendizagem sobre Large Language Models, desde prompts
 1. O PDF é dividido em pedaços de ~1000 caracteres.
 2. Cada pedaço é convertido num embedding (modelo multilingue `paraphrase-multilingual-MiniLM-L12-v2`).
 3. Para cada pergunta, são recuperados os 4 pedaços mais semelhantes.
-4. O LLM responde usando **apenas** esse contexto — se a resposta não estiver no documento, diz "Não sei" em vez de inventar.
+4. O LLM responde usando apenas esse contexto — se a resposta não estiver no documento, diz "Não sei" em vez de inventar.
 
 ## Instalação
 
 ```bash
-git clone https://github.com/RubenSilva13/aprender-llms.git
-cd aprender-llms
+git clone https://github.com/RubenSilva13/learning-llms.git
+cd learning-llms
 python -m venv venv
-venv\Scripts\activate        # Windows
+venv\Scripts\activate        
 pip install -r requirements.txt
 ```
 
@@ -33,7 +33,7 @@ Para o RAG, coloca um PDF na pasta com o nome `documento.pdf`.
 
 ## O que aprendi
 
-- Os LLMs **alucinam**: sem dados reais, inventam respostas plausíveis mas falsas.
+- Os LLMs alucinam: sem dados reais, inventam respostas plausíveis mas falsas.
 - A "memória" de um chatbot é apenas reenviar o histórico em cada pedido.
 - O RAG reduz alucinações ao obrigar o modelo a responder com base em documentos.
 - Tutoriais desatualizam depressa: modelos deixam de estar disponíveis e APIs mudam.
